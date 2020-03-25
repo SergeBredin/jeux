@@ -109,7 +109,7 @@
 		var game = "pyjamasque";//"marvel";//
 		var url_ref = window.location.protocol + '//' + window.location.host + window.location.pathname;
 
-		$.getJSON(url_ref+"/memory.json", function(json) {
+		$.getJSON(new URL("/memory.json",url_ref), function(json) {
 		// ou $.getJSON("/memory.json", function(json) {
 			
 			data = json;
@@ -120,7 +120,7 @@
 			var strNav = "<div width='100%'>";
 			Object.keys(data)
 			.forEach(function(game){
-				strNav += "<a class=\"p-2 text-dark\" href=\""+url_ref+"?game="+game+"\">";
+				strNav += "<a class=\"p-2 text-dark\" href=\""+new URL("?game="+game,url_ref)+"\">";
 				strNav += "<img src=\""+data[game]["images"][0]+"\"/>"
 				strNav += "</a>"
 			});
