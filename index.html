@@ -108,8 +108,9 @@
 		var data = undefined;
 		var game = "pyjamasque";//"marvel";//
 
-		$.getJSON('/memory.json', function(json) {
-
+		$.getJSON("https://sergebredin.github.io/jeux/memory.json", function(json) {
+		// ou $.getJSON("/memory.json", function(json) {
+			
 			data = json;
 
 			// Init Nav bar
