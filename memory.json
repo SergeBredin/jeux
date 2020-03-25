@@ -1,0 +1,58 @@
+{
+	"pyjamasque": {
+		"dimensions":{
+			"lignes": 5,
+			"colonnes": 4,
+			"taille": 95
+		},
+		"images":[
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-catboy.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-owlette.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-gekko.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-romeo.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-luna-girl.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-ninjalinos.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-pj-robot.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-night-ninja.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-anyu.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-splat-monster.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-motsuki.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-armadylan.png",
+			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-wolfy-kids.png"
+		]
+	},
+	"marvel":{
+		"dimensions":{
+			"lignes": 4,
+			"colonnes": 4,
+			"taille": 110
+		},
+		"images":[
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_captain.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_iron_man.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_hulk.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_thor.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_spiderman.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_xmen.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_deadpool.jpg",
+			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_antman.jpg"
+		]
+	},
+	"frozen":{
+		"dimensions":{
+			"lignes": 4,
+			"colonnes": 4,
+			"taille": 110
+		},
+		"images":[
+			"https://lumiere-a.akamaihd.net/v1/images/ct_frozen_elsa_18466_22a50822.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/ct_frozen_anna_18466_6775584b.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/ct_frozen_kristoff_18466_dd7ff541.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/ct_frozen_olaf_18466_eabe1344.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-1h21b0t_06ca1f89.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/character_frozen_snowgies_90c77a8a.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-16im6ko_28911153.jpeg",
+			"https://lumiere-a.akamaihd.net/v1/images/open-uri20150422-20810-1y778bt_9c31d7bc.jpeg"
+		]
+	}
+}
