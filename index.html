@@ -25,7 +25,7 @@
 				height: 100px;
 				width: 100px;
 			}
-			header, #play, #count, nav {
+			header, #play, #count, #source, nav {
 				max-width: 400px;
 				width:100%;
 				margin: 0 auto;
@@ -79,6 +79,7 @@
 		</div>
 		<div id="count" data-count=0>COUPS: 0</div>
 		<div id="play"></div>
+		<div id="source"></div>
 		<div class="modal fade bd-example-modal-lg" id="popup-choice" tabindex="-1" role="dialog" aria-labelledby="popup-choice-label" aria-hidden="true" width="100%">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
@@ -179,6 +180,13 @@
 				}
 				strTable += "</table>";
 				document.getElementById("play").innerHTML = strTable;
+
+				var strSource = "<span><small>source";
+				strSource += "<a class=\"p-2 text-dark\" href=\""+data[game]["source"]["url"]+"\">";
+				strSource += data[game]["source"]["nom"];
+				strSource += "</a>"
+				strSource += "</small></span>";
+				document.getElementById("source").innerHTML = strSource;
 			}
 			initMemory(dimensions["lignes"],dimensions["colonnes"],dimensions["taille"]);
 		
@@ -205,6 +213,7 @@
 				// On retourne
 				var url = data[game]["images"][val];
 				carte.style["background-image"] = "url(\""+url+"\")";
+				carte.style["background-color"]= "white";
 				
 				// 1) Il n'existe pas de premère carte retournée
 				if(!prems){
@@ -230,10 +239,12 @@
 					else {
 						setTimeout(() => { 
 							carte.style["background-image"] = null;
+							carte.style["background-color"]= "lightgray";
 							carte.dataset.status = 0;
-							prems.style["background-image"] = null;
-							prems.dataset.status = 0;
 							carte.textContent = '';
+							prems.style["background-image"] = null;
+							prems.style["background-color"]= "lightgray";
+							prems.dataset.status = 0;
 							prems.textContent = '';
 							rafraichirCompteur();
 						}, 1000);
