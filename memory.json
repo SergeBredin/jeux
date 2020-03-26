@@ -97,5 +97,30 @@
 			"https://vignette.wikia.nocookie.net/asterix/images/9/9a/Asterix7.jpg/revision/latest?cb=20160216084858&path-prefix=fr",
 			"https://vignette.wikia.nocookie.net/asterix/images/2/2f/A06b.gif/revision/latest?cb=20150815072534&path-prefix=fr"
 		]
+	},
+	"patpatrouille":{
+		"dimensions":{
+			"lignes": 6,
+			"colonnes": 4,
+			"taille": 90
+		},
+		"source":{
+			"nom": "lapatpatrouille.ca",
+			"url": "http://lapatpatrouille.ca/"
+		},
+		"images":[
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/chase_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/ruben_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/marcus_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/rocky_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/stella_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/zuma_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/everest_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/ryder_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/mme_la_maire_goodway_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/poule_gallinetta_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/jake_badge_patpatrouile_sq.png",
+			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/m_le_maire_hollinger_badge_patpatrouile_sq.png"
+		]
 	}
 }
