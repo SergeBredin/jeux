@@ -122,5 +122,26 @@
 			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/jake_badge_patpatrouile_sq.png",
 			"http://lapatpatrouille.ca/wp-content/uploads/2018/03/m_le_maire_hollinger_badge_patpatrouile_sq.png"
 		]
-	}
+	},
+	"henry_danger": {
+		"dimensions":{
+			"lignes": 4,
+			"colonnes": 4,
+			"taille": 150
+		},
+		"source":{
+			"nom": "Wikia",
+			"url": "https://static.wikia.nocookie.net"
+		},
+		"images":[
+			"https://static.wikia.nocookie.net/henrydanger/images/a/a2/Henry_%2842%29.jpg/revision/latest/top-crop/width/150/height/150?cb=20190925233928",
+			"https://static.wikia.nocookie.net/henrydanger/images/4/4b/Ray_%2841%29.jpg/revision/latest/top-crop/width/150/height/150?cb=20190925233930",
+			"https://static.wikia.nocookie.net/henrydanger/images/9/95/Piper_%2829%29.jpg/revision/latest/top-crop/width/150/height/150?cb=20190925233931",
+			"https://static.wikia.nocookie.net/henrydanger/images/d/db/Charlotte_%2831%29.jpg/revision/latest/top-crop/width/150/height/150?cb=20190925233931",
+			"https://static.wikia.nocookie.net/henrydanger/images/9/95/Schwoz_%2816%29.jpg/revision/latest/top-crop/width/150/height/150?cb=20190925233929",
+			"https://static.wikia.nocookie.net/henrydanger/images/f/fe/Jasper_%2834%29.jpg/revision/latest/top-crop/width/150/height/150?cb=20190925233929",
+			"https://static.wikia.nocookie.net/henrydanger/images/9/9e/Footer-hd-new.png/revision/latest/top-crop/width/150/height/150?cb=20190214170443",
+			"https://static.wikia.nocookie.net/henrydanger/images/2/29/Screenshot_2019-03-19_at_9.48.36_PM.png/revision/latest/top-crop/width/150/height/150?cb=20190320015338"
+		]
+	},
 }
