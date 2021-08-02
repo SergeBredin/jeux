@@ -155,13 +155,14 @@
 			"url": "https://static.wikia.nocookie.net"
 		},
 		"images":[
-			"https://static.wikia.nocookie.net/thethundermans/images/3/32/Max.png/revision/latest/top-crop/width/150/height/150?cb=20170102004215",
-			"https://static.wikia.nocookie.net/thethundermans/images/3/32/Max.png/revision/latest/top-crop/width/150/height/150?cb=20170102004215",
-			"https://static.wikia.nocookie.net/thethundermans/images/0/04/Chloe_Thunderman.jpeg/revision/latest/top-crop/width/150/height/150?cb=20160910150813",
-			"https://static.wikia.nocookie.net/thethundermans/images/4/4d/Nora-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161029105441",
-			"https://static.wikia.nocookie.net/thethundermans/images/d/d9/Billy-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161029111643",
-			"https://static.wikia.nocookie.net/thethundermans/images/d/d1/Colosso.png/revision/latest/top-crop/width/150/height/150?cb=20170102010029",
-			"https://static.wikia.nocookie.net/thethundermans/images/c/c7/Barb-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161025182803",
-			"https://static.wikia.nocookie.net/thethundermans/images/0/07/Hank-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161025183159"		]
+			"https://sergebredin.github.io/jeux/pics/Thunder_1.png",
+			"https://sergebredin.github.io/jeux/pics/Thunder_2.png",
+			"https://sergebredin.github.io/jeux/pics/Thunder_3.jpeg",
+			"https://sergebredin.github.io/jeux/pics/Thunder_4.png",
+			"https://sergebredin.github.io/jeux/pics/Thunder_5.png",
+			"https://sergebredin.github.io/jeux/pics/Thunder_6.png",
+			"https://sergebredin.github.io/jeux/pics/Thunder_7.png",
+			"https://sergebredin.github.io/jeux/pics/Thunder_8.png"
+		]
 	}
 }
