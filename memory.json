@@ -127,7 +127,7 @@
 		"dimensions":{
 			"lignes": 4,
 			"colonnes": 4,
-			"taille": 150
+			"taille": 110
 		},
 		"source":{
 			"nom": "Wikia",
@@ -144,4 +144,24 @@
 			"https://static.wikia.nocookie.net/henrydanger/images/2/29/Screenshot_2019-03-19_at_9.48.36_PM.png/revision/latest/top-crop/width/150/height/150?cb=20190320015338"
 		]
 	},
+	"thunderman": {
+		"dimensions":{
+			"lignes": 4,
+			"colonnes": 4,
+			"taille": 110
+		},
+		"source":{
+			"nom": "Wikia",
+			"url": "https://static.wikia.nocookie.net"
+		},
+		"images":[
+			"https://static.wikia.nocookie.net/thethundermans/images/3/32/Max.png/revision/latest/top-crop/width/150/height/150?cb=20170102004215",
+			"https://static.wikia.nocookie.net/thethundermans/images/3/32/Max.png/revision/latest/top-crop/width/150/height/150?cb=20170102004215",
+			"https://static.wikia.nocookie.net/thethundermans/images/0/04/Chloe_Thunderman.jpeg/revision/latest/top-crop/width/150/height/150?cb=20160910150813",
+			"https://static.wikia.nocookie.net/thethundermans/images/4/4d/Nora-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161029105441",
+			"https://static.wikia.nocookie.net/thethundermans/images/d/d9/Billy-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161029111643",
+			"https://static.wikia.nocookie.net/thethundermans/images/d/d1/Colosso.png/revision/latest/top-crop/width/150/height/150?cb=20170102010029",
+			"https://static.wikia.nocookie.net/thethundermans/images/c/c7/Barb-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161025182803",
+			"https://static.wikia.nocookie.net/thethundermans/images/0/07/Hank-character-web-desktop.png/revision/latest/top-crop/width/150/height/150?cb=20161025183159"		]
+	}
 }
