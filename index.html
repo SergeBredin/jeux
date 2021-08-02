@@ -8,7 +8,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1" />
 		<title>Memory</title>
-
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 		<script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
 		<script src="https://cdn.staticfile.org/tether/1.4.0/js/tether.min.js"></script>
@@ -111,10 +110,95 @@
 		var game = "pyjamasque";//"marvel";//
 		var url_ref = window.location.protocol + '//' + window.location.host + window.location.pathname;
 
-		$.getJSON(new URL("memory.json",url_ref), function(json) {
+		const rafraichirCompteur = () => {
+			// On augmente le compteur
+			var nodeCount = document.getElementById("count");
+			var count = parseInt(nodeCount.dataset.count) + 1;
+			nodeCount.dataset.count = count;
+			nodeCount.textContent = "COUPS: " + count.toString();
+
+			// On teste si c'est la fin du jeu
+			var nonTrouvees = Array.from(document.getElementsByClassName("carte"))
+			.reduce(function(sum,td){
+				return (td.dataset.status == 0)? sum+1:sum;
+			},0);
+			if(nonTrouvees == 0){
+				document.getElementById("popup-choice-label").textContent = "Bravo! Gagné en "+count.toString()+ " coups.";
+				document.getElementById("popup-choice-icon").textContent = "thumb_up";
+				$("#popup-choice").modal();
+			}
+		}
+
+		let initMemory = (rows,cols,size) => {
+			document.getElementById("play").innerHTML = "";
+			var taille = size.toString();
+			var nbImages = data[game]["images"].length;
+			var limit = rows*cols/2;
+			var indexes = [];
+			var positions = []
+			for (var pos = 0; pos<limit*2; ++pos){
+				indexes.push(0);
+				positions.push(pos);
+			}
+			for (var img = 0; img<limit; ++img){
+				for(var doublon=0; doublon<2; ++doublon){
+					pos = Math.floor(Math.random() * positions.length);
+					indexes[positions[pos]]=img;
+					positions.splice(pos,1);
+				}
+			}
+			var strTable = "<table>";
+			for (var i = 0; i < rows; i++){
+				strTable += "<tr>";
+				for (var j = 0; j < cols; j++){
+					var num = (i*cols+j);
+					var indexImage = indexes[num];
+					strTable += "<td class='carte'";
+					strTable += " id='carte-"+num.toString()+"'";
+					strTable += " style='height:"+taille+"px; width:"+taille+"px;'";
+					strTable += " data-value="+indexImage;
+					strTable += " data-num="+num.toString();
+					strTable += " data-status=0";
+					strTable += " onclick=clickCarte("+num+")>";
+					strTable += "</td>";
+				}
+				strTable += "</tr>";
+			}
+			strTable += "</table>";
+			document.getElementById("play").innerHTML = strTable;
+
+			var strSource = "<span><small>source";
+			strSource += "<a class=\"p-2 text-dark\" href=\""+data[game]["source"]["url"]+"\">";
+			strSource += data[game]["source"]["nom"];
+			strSource += "</a>"
+			strSource += "</small></span>";
+			document.getElementById("source").innerHTML = strSource;
+		}
+
+		const loadData = (url) => {
+			return new Promise(function(resolve, reject	){
+
+			    fetch(url)
+			    .then(function(response){
+			    	if(response.statusText=="OK"){
+			    		return response.json()
+			    		.then(function(json) {
+							return resolve(json);
+			    		})
+			    	}
+			    })
+			    .catch(function(error){
+			    	return reject(error)
+			    })
+			});
+		}
+
+		const url = new URL("memory.json",url_ref);
+		
+		loadData(url.href)
+		.then(function(json) {
 			
 			data = json;
-
 			// Init Nav bar
 			document.getElementById("nav-bar").innerHTML = "";
 			document.getElementById("nav-modal").innerHTML = "";
@@ -143,57 +227,10 @@
 			var dimensions = data[game]["dimensions"];
 
 			// Init game play
-			function initMemory(rows,cols,size){
-				document.getElementById("play").innerHTML = "";
-				var taille = size.toString();
-				var nbImages = data[game]["images"].length;
-				var limit = rows*cols/2;
-				var indexes = [];
-				var positions = []
-				for (var pos = 0; pos<limit*2; ++pos){
-					indexes.push(0);
-					positions.push(pos);
-				}
-				for (var img = 0; img<limit; ++img){
-					for(var doublon=0; doublon<2; ++doublon){
-						pos = Math.floor(Math.random() * positions.length);
-						indexes[positions[pos]]=img;
-						positions.splice(pos,1);
-					}
-				}
-				var strTable = "<table>";
-				for (var i = 0; i < rows; i++){
-					strTable += "<tr>";
-					for (var j = 0; j < cols; j++){
-						var num = (i*cols+j);
-						var indexImage = indexes[num];
-						url = data[game]["images"][indexImage];
-						strTable += "<td class='carte'";
-						strTable += " id='carte-"+num.toString()+"'";
-						strTable += " style='height:"+taille+"px; width:"+taille+"px;'";
-						strTable += " data-value="+indexImage;
-						strTable += " data-num="+num.toString();
-						strTable += " data-status=0";
-						strTable += " onclick=clickCarte("+num+")>";
-						strTable += "</td>";
-					}
-					strTable += "</tr>";
-				}
-				strTable += "</table>";
-				document.getElementById("play").innerHTML = strTable;
-
-				var strSource = "<span><small>source";
-				strSource += "<a class=\"p-2 text-dark\" href=\""+data[game]["source"]["url"]+"\">";
-				strSource += data[game]["source"]["nom"];
-				strSource += "</a>"
-				strSource += "</small></span>";
-				document.getElementById("source").innerHTML = strSource;
-			}
 			initMemory(dimensions["lignes"],dimensions["colonnes"],dimensions["taille"]);
-		
 		});
 
-		function clickCarte(numero){
+		const clickCarte = (numero) => {
 			var carte = document.getElementById("carte-"+numero.toString());
 			var val = carte.dataset.value;
 			var statut = carte.dataset.status;
@@ -251,24 +288,7 @@
 						}, 1000);
 					}
 
-					function rafraichirCompteur(){
-						// On augmente le compteur
-						var nodeCount = document.getElementById("count");
-						var count = parseInt(nodeCount.dataset.count) + 1;
-						nodeCount.dataset.count = count;
-						nodeCount.textContent = "COUPS: " + count.toString();
-
-						// On teste si c'est la fin du jeu
-						var nonTrouvees = Array.from(document.getElementsByClassName("carte"))
-						.reduce(function(sum,td){
-							return (td.dataset.status == 0)? sum+1:sum;
-						},0);
-						if(nonTrouvees == 0){
-							document.getElementById("popup-choice-label").textContent = "Bravo! Gagné en "+count.toString()+ " coups.";
-							document.getElementById("popup-choice-icon").textContent = "thumb_up";
-							$("#popup-choice").modal();
-						}
-					}
+					
 				}
 			} 
 		}
