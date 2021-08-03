@@ -194,11 +194,12 @@
 		}
 
 		const url = new URL("memory.json",url_ref);
-		
+		console.log(url.href)
 		loadData(url.href)
 		.then(function(json) {
 			
 			data = json;
+			console.log(data)
 			// Init Nav bar
 			document.getElementById("nav-bar").innerHTML = "";
 			document.getElementById("nav-modal").innerHTML = "";
