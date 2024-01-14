@@ -1,51 +1,4 @@
 {
-	"pyjamasque": {
-		"dimensions":{
-			"lignes": 5,
-			"colonnes": 4,
-			"taille": 95
-		},
-		"source":{
-			"nom": "pjmasks.fr",
-			"url": "https://www.pjmasks.fr"
-		},
-		"images":[
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-catboy.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-owlette.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-gekko.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-romeo.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-luna-girl.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-ninjalinos.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-pj-robot.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-night-ninja.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-anyu.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-splat-monster.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-motsuki.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-armadylan.png",
-			"https://www.pjmasks.fr/wp-content/uploads/sites/3/2019/09/character-wolfy-kids.png"
-		]
-	},
-	"marvel":{
-		"dimensions":{
-			"lignes": 4,
-			"colonnes": 4,
-			"taille": 110
-		},
-		"source":{
-			"nom": "cultura",
-			"url": "https://www.cultura.com/boutiques/univers-marvel.html"
-		},
-		"images":[
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_captain.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_iron_man.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_hulk.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_thor.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_spiderman.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_xmen.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_deadpool.jpg",
-			"https://media.cultura.com/media/wysiwyg/VITRINES/2018/03_BOUTIQUES/REPASSE/Marvel/W19_antman.jpg"
-		]
-	},
 	"frozen":{
 		"dimensions":{
 			"lignes": 4,
@@ -163,6 +116,27 @@
 			"https://sergebredin.github.io/jeux/pics/Thunder_6.png",
 			"https://sergebredin.github.io/jeux/pics/Thunder_7.png",
 			"https://sergebredin.github.io/jeux/pics/Thunder_8.png"
+		]
+	},
+	"ninjago": {
+		"dimensions":{
+			"lignes": 4,
+			"colonnes": 4,
+			"taille": 110
+		},
+		"source":{
+			"nom": "Wiki Lego",
+			"url": "https://lego.fandom.com/"
+		},
+		"images":[
+			"https://sergebredin.github.io/jeux/pics/ninjago_1.png",
+			"https://sergebredin.github.io/jeux/pics/ninjago_2.png",
+			"https://sergebredin.github.io/jeux/pics/ninjago_3.jpeg",
+			"https://sergebredin.github.io/jeux/pics/ninjago_4.png",
+			"https://sergebredin.github.io/jeux/pics/ninjago_5.png",
+			"https://sergebredin.github.io/jeux/pics/ninjago_6.png",
+			"https://sergebredin.github.io/jeux/pics/ninjago_7.png",
+			"https://sergebredin.github.io/jeux/pics/ninjago_8.png"
 		]
 	}
 }
